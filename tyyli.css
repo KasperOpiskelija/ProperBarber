@@ -1,5 +1,6 @@
+/* Tästä alkaa Indexin omat CSS */
 
-/* 3. Pääkuvan, kuvatekstin, otsikon ja leipätekstin asetukset */
+/* 1. Pääkuvan, kuvatekstin, otsikon ja leipätekstin asetukset */
 
 .paaSisalto {
     display: flex;
@@ -87,7 +88,7 @@
     opacity: 0.8;
 }
 
-/* 4. Toimitilojen kuville, otsikoille ja leipätekstille omat ominaisuudet. */
+/* 2. Toimitilojen kuville, otsikoille ja leipätekstille omat ominaisuudet. */
 
 .toimitilat {
     color: white;
@@ -114,13 +115,16 @@
     border-radius: 6px;
 }
 
+/* Tästä alkaa Yhteystieto-sivun omat CSS */
 
-/* 0. Muuttujat */
+/* 1. Sivun ominaisuudet */
 :root {
   --brand-color: rgb(124, 22, 27);
 }
 
-/* 1. Body:n ominaisuudet */
+.yhteystiedot-main {
+  margin: 8px;
+}
 
 body {
   margin: 0;
@@ -131,6 +135,10 @@ body {
   background-position: center;
   background-attachment: fixed;
   font-family: "Bodoni Moda", serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* 2. Navigoinnin ja sen sisällön ominaisuudet */
@@ -183,14 +191,6 @@ nav a.valittu {
 
 /* 3. Alku teksti */
 
-.yhteystiedot-main {
-  margin: 8px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 .yhteystieto-h1 {
   text-align: center;
   color: white;
@@ -205,7 +205,6 @@ html {
   text-shadow: 2px 2px #000000;
   font-size: 20px;
 }
-
 
 /* 4. maps upotus */
 
@@ -539,11 +538,10 @@ footer p {
   }
 }
 
-
-
 /* Tästä alkaa Meistä-sivun omat CSS */
 
-/* 5. CTA:n ominaisuudet*/    
+/* 1. CTA:n ominaisuudet*/
+
 .cta-meista {
     background-color: rgb(204, 61, 74);
     color: white;
@@ -556,9 +554,7 @@ footer p {
     margin-top: auto;
     border-style: none;
     border-radius: 8px;
-
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
-    
 }
 
 .cta-meista:active {
@@ -571,9 +567,7 @@ footer p {
     cursor: pointer;
 }
 
-
-
-/* 6. historia sectionin asetukset*/
+/* 2. historia sectionin asetukset*/
 
 .historia {
     margin-top: 20px;
@@ -584,22 +578,19 @@ footer p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
     background-image: 
     linear-gradient(rgba(0, 0, 0, 9), rgba(0, 0, 0, 0.9)),
     url('parturin-työkalut.png');
-
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
 }
 
-.historia-alaotsikko{
+.historia-alaotsikko {
     font-weight: bold;
 }
 
@@ -607,13 +598,10 @@ footer p {
     font-family: cursive;
     font-size: 18px;
 }
-/* 7. "Käyntikortit" alkaa tästä */
 
+/* 3. parturikorttien kuvien asetukset */
 
-
-/* 8. parturikorttien kuvien asetukset */
-
-.parturin-esittely{
+.parturin-esittely {
     width: 100%;
     max-width: 200px;
     height: 250px;
@@ -624,12 +612,10 @@ footer p {
     border-style: solid;
     border-width: 3px;
     border-color: white;
-
-
 }
 
-/* 9. parturikorttien (article) asetukset */
-.esittely{
+/* 4. parturikorttien (article) asetukset */
+.esittely {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -642,26 +628,27 @@ footer p {
     transition: transform 0.3s ease;
     color: white;
     font-size: 20px;
-
 }
 
 .esittely p {
     text-align: center;
 }
-.esittely:hover{
+
+.esittely:hover {
     transform: scale(1.10);
 }
-
 
 .esittely-otsikko {
  font-size: 35px;
   color: white;
 }
+
 .esittely-teksti {
   font-size: 20px;
 }
 
-/* 10. Parturikorttien div asetukset*/
+/* 5. Parturikorttien div asetukset*/
+
 .barbers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -671,10 +658,9 @@ footer p {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-
 }
 
-/* 12. parturikorttien media query*/
+/* 6. parturikorttien media query*/
 
 @media (max-width: 900px) {
     .barbers {
@@ -693,11 +679,9 @@ footer p {
     }
 }
 
-/*tähän päättyy meistäsivun css*/
+/* Tästä alkaa Blogisivun CSS /*
 
-/* TÄSTÄ  BLOGISIVU /*
-
-/* 4. Otsikko ja teksti */
+/* 1. Otsikko ja teksti */
 .blogi-teksti {
     color: white;
     text-align: center;
@@ -719,7 +703,7 @@ footer p {
     line-height: 1.7; 
 }
 
-/* 5. Hiustyyli kortit */
+/* 2. Hiustyyli kortit */
 .hius-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -766,7 +750,7 @@ footer p {
     line-height: 1.4; 
 }
 
-/* 6. Lue lisää nappi */
+/* 3. Lue lisää nappi */
 .lue-lisaa {
     display: inline-block;
     margin-top: 12px;
@@ -787,7 +771,7 @@ footer p {
 }
 
 
-/* 10. Tabletti */
+/* 4. Tabletti */
 @media (max-width: 1024px) {
     .hius-grid { 
         grid-template-columns: repeat(2, 1fr); 
@@ -797,7 +781,7 @@ footer p {
     }
 }
 
-/* 11. Mobiili */
+/* 5. Mobiili */
 @media (max-width: 768px) {
     .hius-grid { 
         grid-template-columns: 1fr;
@@ -806,6 +790,3 @@ footer p {
         width: clamp(40px, 8vw, 60px); 
     }
 }
-
-/* TÄHÄN LOPPUU BLOGISIVU */
-
