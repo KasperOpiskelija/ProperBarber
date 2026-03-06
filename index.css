@@ -1,1 +1,114 @@
+/* 3. Pääkuvan, kuvatekstin, otsikon ja leipätekstin asetukset */
 
+.paaSisalto {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: white;
+}
+
+.paa-kuva {
+    width: 500px;
+    height: 375px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    margin-left: 5px;  
+}
+
+.teksti {
+    margin-left: 70px;
+}
+
+.otsikko {
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2.5%;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 1);   
+}
+
+.esittely {
+    color: white;
+    font-size: larger;
+   justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    width: 74%;
+    line-height: 1.5;
+    margin-left: 110px;
+}
+
+.esittely p {
+    margin: 14px 0;
+}
+
+.esittely a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.02px;
+    text-underline-offset: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cta {
+    background-color: rgb(204, 61, 74);
+    color: white;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cta:active {
+    opacity: 0.8;
+}
+
+
+/* 4. Toimitilojen kuville, otsikoille ja leipätekstille omat ominaisuudet. */
+
+.toimitilat {
+    color: white;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(124, 22, 27);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    max-width: 85%;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.toimitila-kuvat{
+    height: 210px;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+}
