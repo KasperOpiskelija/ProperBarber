@@ -56,7 +56,7 @@
     text-underline-offset: 2px;
 }
 
-a {
+.index-linkit {
     text-decoration: none;
     color: white;
 }
