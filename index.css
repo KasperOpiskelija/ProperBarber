@@ -31,7 +31,7 @@
     box-shadow: 5px 5px 5px rgba(1, 1, 1, 1);   
 }
 
-.esittely {
+.index-esittely {
     color: white;
     font-size: larger;
    justify-content: center;
@@ -46,11 +46,11 @@
     margin-left: 110px;
 }
 
-.esittely p {
+.index-esittely p {
     margin: 14px 0;
 }
 
-.esittely a {
+.index-esittely a {
     text-decoration: underline;
     text-decoration-thickness: 0.02px;
     text-underline-offset: 2px;
@@ -113,7 +113,7 @@
         width: 95%;
     }
 
-    .esittely {
+    .index-esittely {
         width: 95%;
         margin-left: 0;
     }
