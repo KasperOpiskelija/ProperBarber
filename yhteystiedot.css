@@ -669,32 +669,6 @@ footer p {
     transform: scale(1.05); 
 }
 
-/* 7. CTA nappi */
-.cta {
-    background-color: rgb(204, 61, 74);
-    color: white;
-    width: 160px;
-    height: 40px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: inherit;
-    border-style: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
-    margin-top: 50px;
-    display: inline-block;
-    text-decoration: none;
-}
-
-.cta:active { 
-    background: black; 
-    opacity: 0.8; 
-}
-
-.cta:hover { 
-    transform: scale(1.03); 
-    cursor: pointer; 
-}
 
 /* 10. Tabletti */
 @media (max-width: 1024px) {
