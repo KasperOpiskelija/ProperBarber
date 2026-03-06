@@ -112,3 +112,57 @@ a {
     border-width: 3px;
     border-radius: 6px;
 }
+
+    /* Pääsisältö pystysuuntaan (kuva katoaa) */
+    .paaSisalto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paa-kuva {
+        display: none;
+        
+    }
+
+    .teksti {
+        margin-left: 0;
+        width: 95%;
+    }
+
+    /* Otsikko ja esittely leveämmäksi */
+    .otsikko {
+        width: 95%;
+    }
+
+    .esittely {
+        width: 95%;
+        margin-left: 0;
+    }
+
+    /* Call-to-action keskitetään */
+    .cta {
+        margin: 20px auto 0 auto;
+    }
+
+    /* Toimitilat pystysuuntaan */
+    .toimitilat {
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    .toimitila-kuvat {
+        width: 50%;
+        height: auto;
+    }
+
+    /* Footer pystysuuntaan */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .footer-some {
+        justify-content: center;
+    }
+}
