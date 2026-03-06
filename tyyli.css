@@ -32,9 +32,24 @@
     box-shadow: 5px 5px 5px rgba(1, 1, 1, 1);   
 }
 
-.esittely {
+.index-esittely {
     color: white;
     font-size: larger;
+}
+
+.index-esittely p {
+    margin: 14px 0;
+}
+
+.index-esittely a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.02px;
+    text-underline-offset: 2px;
+}
+
+.index-linkit {
+    text-decoration: none;
+    color: white;
 }
 
 
