@@ -1,3 +1,42 @@
+/* 3. Pääkuvan, kuvatekstin, otsikon ja leipätekstin asetukset */
+
+.paaSisalto {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: white;
+}
+
+.paa-kuva {
+    width: 500px;
+    height: 375px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    margin-left: 5px;  
+}
+
+.teksti {
+    margin-left: 70px;
+}
+
+.otsikko {
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2.5%;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 1);   
+}
+
+.esittely {
+    color: white;
+    font-size: larger;
+}
+
+
 /* 0. Muuttujat */
 :root {
   --brand-color: rgb(124, 22, 27);
