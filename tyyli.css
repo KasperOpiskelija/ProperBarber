@@ -52,6 +52,31 @@
     color: white;
 }
 
+.index-cta {
+    background-color: rgb(204, 61, 74);
+    color: white;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    font-family: inherit;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-cta:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.index-cta:active {
+    opacity: 0.8;
+}
+
 
 /* 0. Muuttujat */
 :root {
