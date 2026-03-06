@@ -35,6 +35,16 @@
 .index-esittely {
     color: white;
     font-size: larger;
+   justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    width: 74%;
+    line-height: 1.5;
+    margin-left: 110px;
 }
 
 .index-esittely p {
