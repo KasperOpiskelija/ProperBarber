@@ -1,9 +1,9 @@
-/* 0. Muuttujat */
+/* 1. Muuttujat */
 :root {
     --brand-color: rgb(124, 22, 27);
 }
 
-/* 1. Body */
+/* 2. Body */
 body {
     margin: 0;
     background-image:
@@ -13,28 +13,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     font-family: "Bodoni Moda", serif;
-}
-
-/* 2. Otsikko ja teksti */
-.blogi-teksti {
-    color: white;
-    text-align: center;
-    padding: 80px 40px;
-}
-
-.blogi-teksti h1 { 
-    font-size: 52px; 
-    margin: 0 0 30px 0; 
-}
-.blogi-teksti h2 { 
-    font-size: 28px; 
-    margin: 0 0 20px 0; 
-}
-.blogi-teksti p { 
-    font-size: 18px; 
-    max-width: 700px; 
-    margin: 0 auto; 
-    line-height: 1.7; 
 }
 
 /* 3. Navigaatio */
@@ -85,7 +63,32 @@ nav li {
     border-radius: 7px; 
 }
 
-/* 4. Hiustyyli kortit */
+
+ /* TÄSTÄ ALKAA MEISTÄ SIVU /*
+
+/* 4. Otsikko ja teksti */
+.blogi-teksti {
+    color: white;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.blogi-teksti h1 { 
+    font-size: 52px; 
+    margin: 0 0 30px 0; 
+}
+.blogi-teksti h2 { 
+    font-size: 28px; 
+    margin: 0 0 20px 0; 
+}
+.blogi-teksti p { 
+    font-size: 18px; 
+    max-width: 700px; 
+    margin: 0 auto; 
+    line-height: 1.7; 
+}
+
+/* 5. Hiustyyli kortit */
 .hius-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -132,7 +135,7 @@ nav li {
     line-height: 1.4; 
 }
 
-/* 5. Lue lisää nappi */
+/* 6. Lue lisää nappi */
 .lue-lisaa {
     display: inline-block;
     margin-top: 12px;
@@ -152,26 +155,6 @@ nav li {
     transform: scale(1.05); 
 }
 
-/* 6. Soita meille nappi */
-.soita-nappi {
-    display: inline-block;
-    margin-top: 30px;
-    color: white;
-    border: 2px solid white;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-size: 16px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
-}
-
-.soita-nappi:hover { 
-    background-color: white; 
-    color: var(--brand-color); 
-    transform: scale(1.05); 
-}
-
 /* 7. CTA nappi */
 .cta {
     background-color: rgb(204, 61, 74);
@@ -184,6 +167,9 @@ nav li {
     border-style: none;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    margin-top: 50px;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .cta:active { 
@@ -205,12 +191,6 @@ footer {
     border-radius: 6px;
     padding: 30px 40px;
     min-height: 80px;
-}
-
-footer h2 { 
-    color: white; 
-    margin: 0 0 6px 0; 
-    font-size: 24px; 
 }
 
 footer p { 
@@ -293,3 +273,5 @@ footer a:hover {
         padding: 24px 16px; 
     }
 }
+
+/* TÄHÄN LOPPUU MEISTÄ SIVU /*
