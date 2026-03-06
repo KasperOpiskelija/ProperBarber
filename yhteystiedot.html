@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Barber - Yhteystiedot</title>
+    <link rel="stylesheet" href="parturi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 1. Navigoinnin rakenne -->
+    <nav>
+        <a href="index.html"><img class="logo" src="pb_logo.jpg" alt="Proper Barber logo"></a>
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="Meistä.html">Meistä</a></li>
+            <li><a href="Blogi.html">Blogi</a></li>
+            <li><a href="Yhteystiedot.html" class="valittu">Yhteystiedot</a></li>
+        </ul>
+    </nav>
+
+    <!-- 2. Intro -->
+    <main>
+        <h1 class="yhteystieto-h1">Varaa aika</h1>
+        <p class="intro-paragraph">
+            Löydät meidät kolmesta eri toimipisteestä Helsingistä ja Vantaalta.<br>
+            Jokaisessa liikkeessämme palvelemme ammattitaitoisella otteella ilman turhaa kiirettä.<br>
+            Selaa alla olevat liikkeet, tarkista aukioloajat sekä pysäköintitiedot, ja varaa aikasi suoraan puhelimitse.
+        </p>
+
+        <!-- 3. Maps kortit -->
+        <section class="maps-wrapper">
+            <article class="map-card">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.8283221642923!2d24.91275857739931!3d60.15046524502397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920baccfe3ca93%3A0xc5b3f45270467be!2sTyynenmerenkatu%2014%2C%2000220%20Helsinki!5e0!3m2!1sfi!2sfi!4v1772551363075!5m2!1sfi!2sfi"
+                    loading="lazy"></iframe>
+                <div class="card-footer">
+                    <div>
+                        <h2 class="yhteystieto-h2">Jätkäsaari</h2>
+                        <p class="map-paragraph">Tyynenmerenkatu 14a<br>00220 Helsinki</p>
+                    </div>
+                    <div>
+                        <button class="cta" onclick="location.href='#jätkäsaari'">Lisätiedot</button>
+                    </div>
+                </div>
+            </article>
+            <article class="map-card">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1180.3287268344773!2d24.940151006607653!3d60.16304666397591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc9ed25ac99%3A0x517a9b0c9495452c!2sIso%20Roobertinkatu%2020%20-%2022%2C%2000120%20Helsinki!5e0!3m2!1sfi!2sfi!4v1772551412906!5m2!1sfi!2sfi"
+                    loading="lazy"></iframe>
+                <div class="card-footer">
+                    <div>
+                        <h2 class="yhteystieto-h2">Punavuori</h2>
+                        <p class="map-paragraph">Iso Roobertinkatu 22c<br>00120 Helsinki</p>
+                    </div>
+                    <div>
+                        <button class="cta" onclick="location.href='#punavuori'">Lisätiedot</button>
+                    </div>
+                </div>
+            </article>
+            <article class="map-card">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.1975685533346!2d24.85084707755885!3d60.267358139524426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df71826106bcf%3A0x820a059a54491ed8!2sMyyrm%C3%A4entie%206A%2C%2001600%20Vantaa!5e0!3m2!1sfi!2sfi!4v1772551443289!5m2!1sfi!2sfi"
+                    loading="lazy"></iframe>
+                <div class="card-footer">
+                    <div>
+                        <h2 class="yhteystieto-h2">Myyrmäki</h2>
+                        <p class="map-paragraph">Myyrmäentie 6a<br>01600 Vantaa</p>
+                    </div>
+                    <div>
+                        <button class="cta" onclick="location.href='#myyrmäki'">Lisätiedot</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- 4. Liikkeiden infosektiot -->
+        <section class="store-sections">
+            <article class="store-info-card" id="jätkäsaari">
+                <div class="store-info-left">
+                    <h3 class="yhteystieto-h3">Jätkäsaari</h3>
+                    <div class="store-info-row">
+                        <div class="store-info-block">
+                            <h4 class="yhteystieto-h4">Aukioloajat</h4>
+                            <p class="store-info-text">Ma–Pe: 10:00–19:00<br>La: 10:00–17:00<br>Su: Suljettu</p>
+                        </div>
+                        <div class="store-info-block">
+                            <h4 class="yhteystieto-h4">Osoite</h4>
+                            <p class="store-info-text">Tyynenmerenkatu 14a<br>00220 Helsinki</p>
+                        </div>
+                        <div class="store-info-block">
+                            <h4 class="yhteystieto-h4">Puhelin</h4>
+                            <div>
+                                <p class="store-info-text">040 726 1244</p>
+                                <button class="cta" onclick="location.href='tel:0407261244'">Soita nyt</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store-info-block">
+                        <h4 class="yhteystieto-h4">Pysäköinti & liikenneyhteydet</h4>
+                        <p class="store-info-text">
+                            Lähin ilmainen pysäköinti: Verkkokauppa.com:in parkkihalli Rionkadulla, noin 5 min
+                            kävelymatka.<br>
+                            Maksullinen kadunvarsipysäköinti lähialueella (2€/h).<br>
+                            Lähin raitiovaunupysäkki: Länsiterminaali 2 (linjat 7 ja 9), 4 min kävelymatka.</p>
+                    </div>
+                </div>
+                <div class="store-info-right">
+                    <img src="Jätkäsaari.avif" alt="Jätkäsaaren liike" class="store-photo">
+                </div>
+            </article>
+            <article class="store-info-card" id="punavuori">
+                <div class="store-info-left">
+                    <h3 class="yhteystieto-h3">Punavuori</h3>
+                    <div class="store-info-row">
+                        <div class="store-info-block">
+                            <h4 class="yhteystieto-h4">Aukioloajat</h4>
+                            <p class="store-info-text">Ma–Pe: 10:00–19:00<br>La: 10:00–17:00<br>Su: Suljettu</p>
+                        </div>
+                        <div class="store-info-block">
+                            <h4 class="yhteystieto-h4">Osoite</h4>
+                            <p class="store-info-text">Iso Roobertinkatu 22c<br>00120 Helsinki</p>
+                        </div>
+                        <div class="store-info-block">
+                            <h4 class="yhteystieto-h4">Puhelin</h4>
+                            <div>
+                                <p class="store-info-text">040 965 9919</p>
+                                <button class="cta" onclick="location.href='tel:0409659919'">Soita nyt</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store-info-block">
+                        <h4 class="yhteystieto-h4">Pysäköinti & liikenneyhteydet</h4>
+                        <p class="store-info-text">Lähin pysäköintihalli: Aimo-Park Erottaja, 6 min kävelymatka.<br>
+                            Lähin raitiovaunupysäkki: Iso Roobertinkatu (linjat 1 ja 3), 2 min kävelymatka.</p>
+                    </div>
+                </div>
+                <div class="store-info-right">
+                    <img src="Punavuori.jpg" alt="Punavuoren liike" class="store-photo">
+                </div>
+            </article>
+            <article class="store-info-card" id="myyrmäki">
+                <div class="store-info-left">
+                    <h3 class="yhteystieto-h3">Myyrmäki</h3>
+                    <div class="store-info-row">
+                        <div class="store-info-block">
+                            <h4 class="yhteystieto-h4">Aukioloajat</h4>
+                            <p class="store-info-text">Ma–Pe: 10:00–19:00<br>La: 10:00–17:00<br>Su: Suljettu</p>
+                        </div>
+                        <div class="store-info-block">
+                            <h4 class="yhteystieto-h4">Osoite</h4>
+                            <p class="store-info-text">Myyrmäentie 6a<br>01600 Vantaa</p>
+                        </div>
+
+                        <div class="store-info-block">
+                            <h4 class="yhteystieto-h4">Puhelin</h4>
+                            <div>
+                                <p class="store-info-text">050 407 9109</p>
+                                <button class="cta" onclick="location.href='tel:0504079109'">Soita nyt</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store-info-block">
+                        <h4 class="yhteystieto-h4">Pysäköinti & liikenneyhteydet</h4>
+                        <p class="store-info-text">Maksuton pysäköinti Myyrmannin kauppakeskuksessa (2h ilmaiseksi).<br>
+                            Lähin juna-asema: Myyrmäki (linjat I ja P), noin 5 min kävelymatka.<br>
+                            Lähin bussipysäkki: Ojapolku (linjat 300, 400, 530, 560, 584), noin 2 min kävelymatka.</p>
+                    </div>
+                </div>
+                <div class="store-info-right">
+                    <img src="Myyrmäki.jpg" alt="Myyrmäen liike" class="store-photo">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- 5. Footerin rakenne -->
+    <footer>
+        <a href="index.html"><img class="logofooter" src="pb_logo.jpg" alt="Proper Barber logo"></a>
+
+        <div class="footer-mid">
+            <p class="footer-title">Proper Barber</p>
+            <p>Tyylikäs kampaus on jokamiehenoikeus.</p>
+        </div>
+
+        <div class="footer-some">
+            <a href="https://instagram.com" target="_blank">
+                <img class="instagram" src="Instagram.png" alt="Instagram">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img class="facebook" src="Facebook.png" alt="Facebook">
+            </a>
+            <a href="https://tiktok.com" target="_blank">
+                <img class="tiktok" src="Tiktok.png" alt="TikTok">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
