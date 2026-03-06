@@ -113,6 +113,8 @@ a {
     border-radius: 6px;
 }
 
+/* 6. Asetukset puhelimelle (alle 768px leveys) */
+
     /* Pääsisältö pystysuuntaan (kuva katoaa) */
     .paaSisalto {
         flex-direction: column;
