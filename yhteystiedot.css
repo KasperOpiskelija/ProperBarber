@@ -9,18 +9,11 @@ body {
   margin: 0;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url('taustakuva.jfif');
+    url('parturi.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-family: "Bodoni Moda", serif;
-  padding: 8px;
-}
-
-
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* 2. Navigoinnin ja sen sisällön ominaisuudet */
@@ -72,6 +65,14 @@ nav a.valittu {
 }
 
 /* 3. Alku teksti */
+
+.yhteystiedot-main {
+  margin: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .yhteystieto-h1 {
   text-align: center;
