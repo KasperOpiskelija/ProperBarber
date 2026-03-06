@@ -1,70 +1,4 @@
-/* 1. Muuttujat */
-:root {
-    --brand-color: rgb(124, 22, 27);
-}
-
-/* 2. Body */
-body {
-    margin: 0;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-        url('parturi.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: "Bodoni Moda", serif;
-}
-
-/* 3. Navigaatio */
-nav {
-    background-color: var(--brand-color);
-    display: flex;
-    align-items: center;
-    border-radius: 6px;
-    padding: 10px 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-nav a:hover { 
-    opacity: 0.75; 
-}
-
-nav a.valittu {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
-    padding: 6px 14px;
-    border-radius: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    font-size: clamp(20px, 2.5vw, 30px);
-    color: white;
-}
-
-nav li { 
-    flex: 1; 
-    text-align: center; 
-}
-
-.logo { 
-    display: block; 
-    width: 90px; 
-    border-radius: 7px; 
-}
-
-
- /* TÄSTÄ ALKAA MEISTÄ SIVU /*
+/* TÄSTÄ ALKAA MEISTÄ SIVU /*
 
 /* 4. Otsikko ja teksti */
 .blogi-teksti {
@@ -182,66 +116,10 @@ nav li {
     cursor: pointer; 
 }
 
-/* 8. Footer */
-footer {
-    background-color: var(--brand-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 6px;
-    padding: 30px 40px;
-    min-height: 80px;
-}
-
-footer p { 
-    color: rgba(255, 255, 255, 0.75); 
-    margin: 0; 
-    font-size: 18px; 
-}
-
-.logofooter { 
-    height: 80px; 
-    width: auto; 
-    border-radius: 7px; 
-}
-
-.footer-mid { 
-    text-align: center; 
-}
-
-footer a { 
-    text-decoration: none; 
-    color: white; 
-    font-weight: bold; 
-}
-
-footer a:hover { 
-    opacity: 0.75; 
-}
-
-/* 9. Some logot */
-.footer-some { 
-    display: flex; 
-    align-items: center; 
-    gap: 30px; 
-    margin-right: 16px; 
-}
-
-.instagram,
-.facebook,
-.tiktok {
-    height: 35px;
-    width: auto;
-    opacity: 0.85;
-}
-
 /* 10. Tabletti */
 @media (max-width: 1024px) {
     .hius-grid { 
         grid-template-columns: repeat(2, 1fr); 
-    }
-    nav a.valittu { 
-        padding: 4px 6px; 
     }
     .logo { 
         width: 50px; 
@@ -252,25 +130,8 @@ footer a:hover {
 @media (max-width: 768px) {
     .hius-grid { 
         grid-template-columns: 1fr; 
-    }
-    nav { 
-        padding: 10px 8px 10px 3px; 
-    }
-    nav ul { 
-        font-size: clamp(10px, 3.8vw, 20px); 
-        gap: 4px; 
-    }
-    nav a.valittu { 
-        padding: 4px clamp(4px, 1.5vw, 8px); 
-    }
     .logo { 
         width: clamp(40px, 8vw, 60px); 
-    }
-    footer { 
-        flex-direction: column; 
-        text-align: center; 
-        gap: 20px; 
-        padding: 24px 16px; 
     }
 }
 
