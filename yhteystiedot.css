@@ -577,3 +577,143 @@ footer p {
 }
 
 /*tähän päättyy meistäsivun css*/
+
+/* TÄSTÄ  BLOGISIVU /*
+
+/* 4. Otsikko ja teksti */
+.blogi-teksti {
+    color: white;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.blogi-teksti h1 { 
+    font-size: 52px; 
+    margin: 0 0 30px 0; 
+}
+.blogi-teksti h2 { 
+    font-size: 28px; 
+    margin: 0 0 20px 0; 
+}
+.blogi-teksti p { 
+    font-size: 18px; 
+    max-width: 700px; 
+    margin: 0 auto; 
+    line-height: 1.7; 
+}
+
+/* 5. Hiustyyli kortit */
+.hius-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.hius {
+    background-color: var(--brand-color);
+    color: white;
+    padding: 24px;
+    border-radius: 14px;
+    text-align: center;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.hius:hover { 
+    transform: scale(1.05); 
+}
+
+.hius img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 14px;
+    background-color: var(--brand-color);
+}
+
+.hius h3 { 
+    margin: 12px 0 6px 0; 
+    font-size: 18px; 
+}
+
+.hius p { 
+    margin: 0; 
+    font-size: 13px; 
+    line-height: 1.4; 
+}
+
+/* 6. Lue lisää nappi */
+.lue-lisaa {
+    display: inline-block;
+    margin-top: 12px;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.lue-lisaa:hover { 
+    background-color: white; 
+    color: var(--brand-color); 
+    transform: scale(1.05); 
+}
+
+/* 7. CTA nappi */
+.cta {
+    background-color: rgb(204, 61, 74);
+    color: white;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inherit;
+    border-style: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    margin-top: 50px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.cta:active { 
+    background: black; 
+    opacity: 0.8; 
+}
+
+.cta:hover { 
+    transform: scale(1.03); 
+    cursor: pointer; 
+}
+
+/* 10. Tabletti */
+@media (max-width: 1024px) {
+    .hius-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .logo { 
+        width: 50px; 
+    }
+}
+
+/* 11. Mobiili */
+@media (max-width: 768px) {
+    .hius-grid { 
+        grid-template-columns: 1fr; 
+    .logo { 
+        width: clamp(40px, 8vw, 60px); 
+    }
+}
+
+/* TÄHÄN LOPPUU BLOGISIVU /*
+
