@@ -421,3 +421,159 @@ footer p {
     padding: 24px 16px;
   }
 }
+
+
+
+/* Tästä alkaa Meistä-sivun omat CSS */
+
+/* 5. CTA:n ominaisuudet*/    
+.cta-meista {
+    background-color: rgb(204, 61, 74);
+    color: white;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inherit;
+    align-self: center;
+    margin-top: auto;
+    border-style: none;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    
+}
+
+.cta-meista:active {
+    background: black;
+    opacity: 0.8;
+}
+
+.cta-meista:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+
+/* 6. historia sectionin asetukset*/
+
+.historia {
+    margin-top: 20px;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 9), rgba(0, 0, 0, 0.9)),
+    url('parturin-työkalut.png');
+
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.historia-alaotsikko{
+    font-weight: bold;
+}
+
+.paul-mitchell {
+    font-family: cursive;
+    font-size: 18px;
+}
+/* 7. "Käyntikortit" alkaa tästä */
+
+
+
+/* 8. parturikorttien kuvien asetukset */
+
+.parturin-esittely{
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+
+}
+
+/* 9. parturikorttien (article) asetukset */
+.esittely{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(124, 22, 27);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease;
+    color: white;
+    font-size: 20px;
+
+}
+
+.esittely p {
+    text-align: center;
+}
+.esittely:hover{
+    transform: scale(1.10);
+}
+
+
+}.esittely-otsikko {
+ font-size: 35px;
+  color: white;
+}
+.esittely-teksti {
+  font-size: 20px;
+}
+
+/* 10. Parturikorttien div asetukset*/
+.barbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+/* 12. parturikorttien media query*/
+
+@media (max-width: 900px) {
+    .barbers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .barbers {
+        grid-template-columns: 1fr;
+    }
+
+    .parturin-esittely {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/*tähän päättyy meistäsivun css*/
