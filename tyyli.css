@@ -115,6 +115,46 @@
     border-radius: 6px;
 }
 
+/* 3. Mobiili */
+
+@media (max-width: 768px) {
+    .paaSisalto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paa-kuva {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .teksti {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .otsikko {
+        width: 90%;
+    }
+
+    .index-esittely {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .toimitilat {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .toimitila-kuvat {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* Tästä alkaa Yhteystieto-sivun omat CSS */
 
 /* 1. Sivun ominaisuudet */
