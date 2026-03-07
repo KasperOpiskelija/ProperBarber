@@ -130,7 +130,7 @@ body {
   margin: 0;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url('parturi.jpg');
+    url('images/common/parturi.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
