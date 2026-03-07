@@ -734,10 +734,9 @@ footer p {
 .hius img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
-    object-position: center top;
+    object-fit: contain;
     border-radius: 14px;
-    box-shadow: inset 0 0 0 2px white;
+    background-color: var(--brand-color);
 }
 
 .hius h3 { 
