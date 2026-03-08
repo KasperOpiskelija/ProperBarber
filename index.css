@@ -173,6 +173,14 @@
         height: auto;
     }
 
+    /* Hinnaston puhelinasetukset */
+
+    .hinnasto {
+        max-width: 90%;
+        justify-content: center;
+        margin-left: 25px;
+    }
+    
     /* Footer pystysuuntaan */
     footer {
         flex-direction: column;
