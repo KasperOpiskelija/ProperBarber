@@ -495,9 +495,9 @@ footer p {
 .store-info-left {
   flex: 1;
   padding: 36px 40px;
-  display: grid;
-  grid-template-columns: minmax(0, 350px) 1fr;
-  gap: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   align-content: start;
 }
 
@@ -514,7 +514,9 @@ footer p {
 }
 
 .store-info-row {
-  display: contents;
+  display: flex;
+  gap: 20px;
+  width: 100%;
 }
 
 .store-info-text {
@@ -602,13 +604,6 @@ footer p {
   }
 
   .store-info-block {
-    flex: 1;
-  }
-
-  .store-info-row {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
     flex: 1;
   }
 }
