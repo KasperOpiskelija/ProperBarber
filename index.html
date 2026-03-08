@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proper Barber | Klassista Hius- ja Parranmuotoilua | Parturi Helsinki</title>
+    <title>Parturi Helsinki | Klassista Hius- ja Parranmuotoilua | Proper Barber</title>
 
     <!-- Bodoni Moda -fontti -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
     <!-- linkitys css-tiedostoon-->
-    <link rel="stylesheet" href="tyyli.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -19,8 +21,11 @@
     <!-- Navigointipalkki-->
 
     <nav>
-        <a href="index.html"><img class="logo" src="images/common/pb_logo.jpg" alt="Proper Barber logo"></a>
-        <ul>
+        <a href="index.html">
+            <img class="logo" src="pb_logo.jpg" alt="logo">
+        </a>
+
+        <ul class="nav-ul">
             <li><a href="index.html" class="valittu">Etusivu</a></li>
             <li><a href="meista.html">Meistä</a></li>
             <li><a href="blogi.html">Blogi</a></li>
@@ -33,8 +38,98 @@
     <!-- Pääsisältö-->
 
     <section class="paaSisalto">
-        <img class="paa-kuva" src="images/index/paakuva.jpg" alt="Työpöytä">
+        <img class="paa-kuva" src="paakuva.jpg" alt="Työpöytä">
 
+
+        <div class="teksti">
+
+            <h1 class="otsikko">Tervetuloa Proper Barberiin!</h1>
+
+            <div class="index-esittely">
+                <h3 class="sivuotsikko">Komea kampaus on jokamiehenoikeus!</h3>
+                <p>Parturimme hoitaa ja siistii niin hiuksesi kuin partasi ja olemme kätevästi lähelläsi.</p>
+                <p>Partureinamme toimivat parturit <strong>Timur, Yahir</strong> ja <strong>Johan,</strong> joista
+                    jokaisella on kokemusta hiustenleikkuusta vähintään 10 vuotta.</p>
+                <p>Lisätietoja partureista <a class="index-linkit" href="meista">Meistä-sivulla!</a></p>
+
+                <button class="index-cta" onclick="location.href='tel:0407261244'">Soita nyt</button>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+
+    <!-- Hinnasto -->
+    <section class="hinnasto">
+        <h2>Hinnasto</h2>
+
+        <ul class="hinnasto-lista">
+            <li><span>✂️ Hiustenleikkaus</span><span>25 €</span></li>
+            <li><span>🪒 Parranajo</span><span>25 €</span></li>
+            <li><span>⭐ Leikkaus + parranajo</span><span>45 €</span></li>
+        </ul>
+
+    </section>
+
+    <br>
+
+    <!-- Toimitilat ja niiden sisältö-->
+
+    <section class="toimitilat">
+
+        <div>
+
+            <img class="toimitila-kuvat" src="julkisivu.jpg" alt="Kuva Punavuoren julkisivusta">
+            <h3>Punavuoren toimipiste</h3>
+            <p>Tyynemerenkatu 14a</p>
+        </div>
+
+
+        <div>
+
+            <img class="toimitila-kuvat" src="keskikuva.jpg" alt="Esimerkki palvelusta">
+            <h3>Jätkäsaaren toimipiste</h3>
+            <p>Iso Roobertinkatu 22c</p>
+        </div>
+
+        <div>
+            <img class="toimitila-kuvat" src="paakuva.jpg" alt="Myyrmäen toimipiste">
+            <h3>Myyrmäen toimipiste</h3>
+            <p>Myyrmäentie 6a</p>
+        </div>
+
+
+    </section>
+
+    <br>
+
+    <!-- Footer-->
+
+    <footer>
+        <img class="logo" src="pb_logo.jpg" alt="logo">
+
+        <div class="footer-mid">
+            <h2>Proper Barber</h2>
+            <p>Tyylikäs kampaus on jokamiehenoikeus.</p>
+        </div>
+
+        <div class="footer-some">
+            <a href="https://www.instagram.com" target="_blank">
+                <img class="instagram" src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img class="facebook" src="facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img class="tiktok" src="tiktok.png" alt="TikTok">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
 
         <div class="teksti">
 
