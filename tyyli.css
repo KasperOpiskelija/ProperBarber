@@ -682,7 +682,7 @@ footer p {
 /* 2. historia sectionin asetukset*/
 
 .historia {
-  margin-top: 0px;
+  margin-top: 0;
   font-family: 'Bodoni Moda', serif;
   font-size: 20px;
   color: rgb(255, 255, 255);
@@ -693,7 +693,7 @@ footer p {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url('parturin-työkalut.png');
-  border-radius: 0px;
+  border-radius: 0;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
   background-size: cover;
