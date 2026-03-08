@@ -136,6 +136,7 @@ footer p {
   .logo {
     width: 50px;
   }
+}
 
   /* 5. Mobiili */
 @media (max-width: 768px) {
@@ -167,7 +168,7 @@ footer p {
     gap: 20px;
     padding: 24px 16px;
   }
-  
+}
 /* Tästä alkaa Indexin omat CSS */
 
 /* 1. Pääkuvan, kuvatekstin, otsikon ja leipätekstin asetukset */
