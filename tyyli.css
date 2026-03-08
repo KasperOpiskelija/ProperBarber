@@ -84,7 +84,7 @@
   opacity: 0.8;
 }
 
-/* 4. Hinnaston tyyliasetukset */
+/* 2. Hinnaston tyyliasetukset */
 .hinnasto {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 6px;
@@ -119,7 +119,7 @@
     border-bottom: none;
 }
 
-/* 2. Toimitilojen kuville, otsikoille ja leipätekstille omat ominaisuudet. */
+/* 3. Toimitilojen kuville, otsikoille ja leipätekstille omat ominaisuudet. */
 
 .toimitilat {
   color: white;
@@ -145,7 +145,7 @@
   border-radius: 6px;
 }
 
-/* 6. Asetukset puhelimelle (alle 1175px leveys) */
+/* 4. Asetukset puhelimelle (alle 1175px leveys) */
 
 @media (max-width: 1175px) {
 
