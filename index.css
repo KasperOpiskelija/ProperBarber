@@ -61,6 +61,42 @@
     color: white;
 }
 
+/* 4. Hinnaston tyyliasetukset */
+
+.hinnasto {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    font-size: larger;
+}
+
+.hinnasto h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hinnasto-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #ddd;
+}
+
+.hinnasto-lista li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border-bottom: 1px solid #3d1515;
+}
+
+.hinnasto-lista li:last-child {
+    border-bottom: none;
+}
+
 /* 4. Toimitilojen kuville, otsikoille ja leipätekstille omat ominaisuudet. */
 
 .toimitilat {
