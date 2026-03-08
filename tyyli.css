@@ -145,6 +145,82 @@
   border-radius: 6px;
 }
 
+/* 6. Asetukset puhelimelle (alle 768px leveys) */
+
+@media (max-width: 1175px) {
+
+    /* Navigaatio pysyy vaakasuunnassa */
+    nav {
+        flex-direction: flex;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: flex;
+        font-size: 18px;
+    }
+
+    /* Pääsisältö pystysuuntaan (kuva katoaa) */
+    .paaSisalto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paa-kuva {
+        display: none;
+    }
+
+    .teksti {
+        width: 95%;
+        justify-content: center;
+    }
+
+    /* Otsikko ja esittely leveämmäksi */
+    .otsikko {
+        width: 95%;
+    }
+
+    .index-esittely {
+        width: 95%;
+        margin-left: 0;
+    }
+
+    /* Call-to-action keskitetään */
+    .cta {
+        margin: 20px auto 0 auto;
+    }
+
+    /* Hinnaston puhelinasetukset */
+
+    .hinnasto {
+        max-width: 90%;
+        justify-content: center;
+        margin-left: 25px;
+    }
+
+    /* Toimitilat pystysuuntaan */
+    .toimitilat {
+        flex-direction: column;
+        max-width: 80%; 
+    }
+
+    .toimitila-kuvat {
+        width: 50%;
+        height: auto;
+    }
+
+    /* Footer pystysuuntaan */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .footer-some {
+        justify-content: center;
+    }
+}
+
 /* Tästä alkaa Yhteystieto-sivun omat CSS */
 
 /* 1. Sivun ominaisuudet */
