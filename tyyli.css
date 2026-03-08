@@ -1,3 +1,173 @@
+/* Yhteiset CSS */
+/* 1. Sivusto asetukset */
+:root {
+  --brand-color: rgb(124, 22, 27);
+}
+
+body {
+  margin: 0;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url('images/common/parturi.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Bodoni Moda", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 2. Navigoinnin ja sen sisällön ominaisuudet */
+nav {
+  background-color: var(--brand-color);
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: clamp(20px, 2.5vw, 30px);
+  color: white;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  opacity: 0.75;
+}
+
+nav a.valittu {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.logo {
+  display: block;
+  width: 90px;
+  border-radius: 7px;
+}
+
+/* 3. Footerin ja sen sisällön ominaisuudet */
+
+footer {
+  background-color: var(--brand-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 30px 40px;
+  min-height: 80px;
+}
+
+.footer-mid {
+  text-align: center;
+}
+
+.footer-some {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.instagram,
+.tiktok,
+.facebook {
+  height: 35px;
+  width: auto;
+  opacity: 0.85;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover {
+  opacity: 0.75;
+}
+
+.footer-title {
+  color: white;
+  margin: 0 0 6px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  font-size: 18px;
+}
+
+.logofooter {
+  height: 80px;
+  width: auto;
+  border-radius: 7px;
+}
+
+/* 4. Tabletti */
+@media (max-width: 1024px) {
+
+  nav a.valittu {
+    padding: 4px 6px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  /* 5. Mobiili */
+@media (max-width: 768px) {
+
+  nav {
+    padding: 10px 8px 10px 3px;
+  }
+
+  nav ul {
+    font-size: clamp(10px, 3.8vw, 20px);
+    gap: 4px;
+  }
+
+  nav a.valittu {
+    padding: 4px clamp(4px, 1.5vw, 8px);
+  }
+
+  .logo {
+    width: clamp(40px, 8vw, 60px);
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 24px 16px;
+  }
+  
 /* Tästä alkaa Indexin omat CSS */
 
 /* 1. Pääkuvan, kuvatekstin, otsikon ja leipätekstin asetukset */
@@ -201,79 +371,13 @@
 
 /* Tästä alkaa Yhteystieto-sivun omat CSS */
 
-/* 1. Sivun ominaisuudet */
-:root {
-  --brand-color: rgb(124, 22, 27);
-}
+/* 1. Main */
 
 .yhteystiedot-main {
   margin: 8px;
 }
 
-body {
-  margin: 0;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url('images/common/parturi.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: "Bodoni Moda", serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* 2. Navigoinnin ja sen sisällön ominaisuudet */
-nav {
-  background-color: var(--brand-color);
-  display: flex;
-  align-items: center;
-  border-radius: 6px;
-  padding: 10px 20px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  flex: 1;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  font-size: clamp(20px, 2.5vw, 30px);
-  color: white;
-}
-
-nav li {
-  flex: 1;
-  text-align: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-nav a:hover {
-  opacity: 0.75;
-}
-
-nav a.valittu {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
-  padding: 6px 14px;
-  border-radius: 20px;
-}
-
-.logo {
-  display: block;
-  width: 90px;
-  border-radius: 7px;
-}
-
-/* 3. Alku teksti */
+/* 2. Alku teksti */
 
 .yhteystieto-h1 {
   text-align: center;
@@ -290,7 +394,7 @@ nav a.valittu {
   font-size: 20px;
 }
 
-/* 4. maps upotus */
+/* 3. maps upotus */
 
 .maps-wrapper {
   display: flex;
@@ -351,7 +455,7 @@ nav a.valittu {
 }
 
 
-/* 5. Liikkeiden infosektiot */
+/* 4. Liikkeiden infosektiot */
 .store-sections {
   display: flex;
   flex-direction: column;
@@ -425,7 +529,7 @@ nav a.valittu {
   display: block;
 }
 
-/* 6. CTA ominaisuudet */
+/* 5. CTA ominaisuudet */
 
 .cta {
   background-color: rgb(204, 61, 74);
@@ -451,75 +555,8 @@ nav a.valittu {
   opacity: 0.8;
 }
 
-/* 7. Footerin ja sen sisällön ominaisuudet */
-
-footer {
-  background-color: var(--brand-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 6px;
-  padding: 30px 40px;
-  min-height: 80px;
-}
-
-.footer-mid {
-  text-align: center;
-}
-
-.footer-some {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.instagram,
-.tiktok,
-.facebook {
-  height: 35px;
-  width: auto;
-  opacity: 0.85;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-footer a:hover {
-  opacity: 0.75;
-}
-
-.footer-title {
-  color: white;
-  margin: 0 0 6px 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-footer p {
-  color: rgba(255, 255, 255, 0.75);
-  margin: 0;
-  font-size: 18px;
-}
-
-.logofooter {
-  height: 80px;
-  width: auto;
-  border-radius: 7px;
-}
-
-/* 8. Tabletti */
+/* 6. Tabletti */
 @media (max-width: 1024px) {
-
-  nav a.valittu {
-    padding: 4px 6px;
-  }
-
-  .logo {
-    width: 50px;
-  }
 
   .map-card {
     flex: 1 1 calc(50% - 15px);
@@ -555,30 +592,8 @@ footer p {
   }
 }
 
-/* 9. Mobiili */
+/* 7. Mobiili */
 @media (max-width: 768px) {
-
-  nav {
-    padding: 10px 8px 10px 3px;
-  }
-
-  nav ul {
-    font-size: clamp(10px, 3.8vw, 20px);
-    gap: 4px;
-  }
-
-  nav a.valittu {
-    padding: 4px clamp(4px, 1.5vw, 8px);
-  }
-
-  .logo {
-    width: clamp(40px, 8vw, 60px);
-  }
-
-  body {
-    background-attachment: scroll;
-  }
-
   .map-card {
     flex: 1 1 100%;
   }
@@ -612,13 +627,6 @@ footer p {
 
   .store-info-row {
     flex-direction: column;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    padding: 24px 16px;
   }
 }
 
