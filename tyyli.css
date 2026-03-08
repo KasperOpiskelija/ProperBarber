@@ -534,7 +534,6 @@ footer p {
   margin: 0 0 4px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.25);
   padding-bottom: 14px;
-  grid-column: 1 / -1;
 }
 
 .yhteystieto-h4 {
