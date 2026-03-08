@@ -509,16 +509,18 @@ footer p {
 
 .store-info-block {
   display: flex;
-  flex: 1;
   flex-direction: column;
   gap: 2px;
 }
 
 .store-info-row {
   display: flex;
-  flex: 1;
   gap: 20px;
   width: 100%;
+}
+
+.store-info-row .store-info-block {
+  flex: 1;
 }
 
 .store-info-text {
@@ -534,6 +536,7 @@ footer p {
   margin: 0 0 4px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.25);
   padding-bottom: 14px;
+  width: 100%;
 }
 
 .yhteystieto-h4 {
