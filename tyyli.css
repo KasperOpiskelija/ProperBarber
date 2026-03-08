@@ -691,7 +691,7 @@ footer p {
   align-items: center;
   text-align: center;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 9), rgba(0, 0, 0, 0.9)),
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url('parturin-työkalut.png');
   border-radius: 0px;
   padding: 20px;
