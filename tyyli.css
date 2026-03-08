@@ -509,12 +509,14 @@ footer p {
 
 .store-info-block {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 2px;
 }
 
 .store-info-row {
   display: flex;
+  flex: 1;
   gap: 20px;
   width: 100%;
 }
