@@ -685,11 +685,12 @@ footer p {
 
 .historia-alaotsikko {
   font-weight: bold;
+  font-size: 28px;
 }
 
 .paul-mitchell {
   font-family: cursive;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* 3. parturikorttien kuvien asetukset */
