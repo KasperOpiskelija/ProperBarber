@@ -892,19 +892,11 @@ footer p {
   .hius-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .logo {
-    width: 50px;
-  }
 }
 
 /* 5. Mobiili */
 @media (max-width: 768px) {
   .hius-grid {
     grid-template-columns: 1fr;
-  }
-
-  .logo {
-    width: clamp(40px, 8vw, 60px);
   }
 }
